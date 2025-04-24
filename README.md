@@ -61,3 +61,44 @@ All moods are logged and stored in a PostgreSQL database and can be viewed histo
    ```bash
    git clone https://github.com/DevashreeNaik24/Zidio-task-optimizer-1.git
    cd Zidio-task-optimizer-1
+
+2. Set up the Flask backend:
+   ```bash
+   cd mood-tracker
+python3 -m venv zidio_env
+source zidio_env/bin/activate
+pip install -r requirements.txt
+python app.py
+
+3. Run the React frontend:
+   ```bash
+cd frontend
+npm install
+npm start
+
+4. Ensure Postgresql is running and configured based on the credentials in app.py.
+
+5. 📊 Database Schema
+   ```bash
+CREATE TABLE mood_tracking (
+    id SERIAL PRIMARY KEY,
+    employee_id TEXT NOT NULL,
+    mood TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+## 👥 Contributors
+
+Group 7 - Zidio Development
+
+## 📬 Contact
+
+For project-related queries or collaboration opportunities:
+
+📧 devashreenaik2431@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/devashree-naik-91880428a/
+
+## 🏁 Final Note
+
+This project was developed as part of the Zidio Developer Internship to integrate AI into workplace productivity solutions. It highlights the potential of emotion-aware systems to boost both individual performance and team morale.
+
