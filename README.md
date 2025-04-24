@@ -71,7 +71,6 @@ pip install -r requirements.txt
 python app.py
 
 3. Run the React frontend:
-   ```bash
 cd frontend
 npm install
 npm start
@@ -79,7 +78,6 @@ npm start
 4. Ensure Postgresql is running and configured based on the credentials in app.py.
 
 5. 📊 Database Schema
-   ```bash
 CREATE TABLE mood_tracking (
     id SERIAL PRIMARY KEY,
     employee_id TEXT NOT NULL,
